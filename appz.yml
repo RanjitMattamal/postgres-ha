@@ -1,7 +1,7 @@
 app:
     name: Postgres HA
     code: POSTGRESHA
-    notify: krishnan.rejith@gmail.com
+    notify: ranjit.m@orioninc.com   
 build:
     version: 13.X
     env: DEV
@@ -10,7 +10,7 @@ build:
     image_template: postgres_ha-13.3
     
 deploy:
-    context: rejith/DEV
+    context: RanjitMattamal/DEV
     type: statefulset
     replicas: 3
     port:
